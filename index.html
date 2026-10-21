@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>chatbot</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h2>AI Video Editing Assistant</h2>
+    <div class="video-section">
+        <video id="player" controls></video>
+        <input type="file" id="fileInput" accept="video/*" hidden>
+        <div class="video-buttons">
+            <button id="uploadButton">Upload</button>
+            <button id="exportButton">Export</button>
+        </div>
+    </div>
+
+    
+    <div id="chatbot">
+
+        <div id="messages"></div>
+         <div id="options" hidden>
+            <button id="transcriptButton">Transcripts</button>
+            <button id="cleanTranscriptButton">
+                Transcripts without filler words
+            </button>
+        </div>
+         <div id="chatControls">
+         <input type="text" id="chatInput" placeholder="Edit your video..." />
+          <button id="sendButton">Send</button>
+          </div>
+       
+        <div id="transcript" hidden></div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
